@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio Responsivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class = "banner" id = "sec">
+        <header>
+           <a href="#" class="logo">Logo</a>
+           <div id="toggle" onclick="toggle()"></div> 
+        </header>
+        <div class="content">
+           <h2>Olâ Mundo, Eu sou<br><span>Fulano de Taul</span></h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus deserunt inventore nemo error. Facere, perferendis error ducimus nisi assumenda molestias voluptates amet libero totam, iusto magnam iste minus aut vitae.</p>
+           <a href="#">Saiba mais</a>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="twitter.png" alt="twitter"></a></li>
+            <li><a href="#"><img src="linkedin.png" alt="linkedin"></a></li>
+        </ul>
+    </section>
+    <div id="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Portifolio</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var navi = document.getElementById('nav');
+            sec.classList.toggle('active');
+            navi.classList.toggle('active');
+        }
+    </script>
+        
+    
+</body>
+</html>
