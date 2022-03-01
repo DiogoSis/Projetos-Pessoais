@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style_menu.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo2.png" alt="logo"></a>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="navigation">
+                <li><a href="../index.html"><strong>Home</strong></a></li>
+                <li><a href="menu.html"><strong>Menu</strong></a></li>
+                <li><a href="#"><strong>Contatos</strong></a></li>
+            </ul>
+        </header>
+        <div class="container">
+          <div class="card">
+              <div class="imgBx">
+                  <img src="img1.jpg" alt="img1">
+              </div>
+              <div class="content">
+                  <h2>Card Um</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, ea nulla praesentium veniam provident impedit perspiciatis illo minus ratione.</p>
+              </div>
+          </div>
+          
+          <div class="card">
+              <div class="imgBx">
+                  <img src="img2.jpg" alt="img2">
+              </div>
+              <div class="content">
+                  <h2>Card Dois</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, ea nulla praesentium veniam provident impedit perspiciatis illo minus ratione</p>
+              </div>
+          </div>
+          
+          <div class="card">
+              <div class="imgBx">
+                  <img src="img3.jpg" alt="img3">
+              </div>
+              <div class="content">
+                  <h2>Card Tres</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, ea nulla praesentium veniam provident impedit perspiciatis illo minus ratione</p>
+              </div>
+          </div>
+          <div class="card">
+            <div class="imgBx">
+                <img src="img3.jpg" alt="img3">
+            </div>
+            <div class="content">
+                <h2>Card Tres</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, ea nulla praesentium veniam provident impedit perspiciatis illo minus ratione</p>
+            </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+              <img src="img3.jpg" alt="img3">
+          </div>
+          <div class="content">
+              <h2>Card Tres</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, ea nulla praesentium veniam provident impedit perspiciatis illo minus ratione</p>
+          </div>
+      </div>
+      </div>
+
+
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+            
+        </ul>
+    </section>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+    
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          loop:true,
+
+          
+        
+        });
+        function toggleMenu(){
+              const menuToggle = document.querySelector('.toggle');
+              const navigation = document.querySelector('.navigation')
+              menuToggle.classList.toggle('active')
+              navigation.classList.toggle('active')
+        }
+      </script>
+</body>
+</html>
